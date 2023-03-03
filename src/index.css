@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@600;700&family=Montserrat:wght@800&family=Poppins:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  @apply font-heading font-normal text-5xl sm:text-6xl md:text-7xl lg:text-[84px] xl:text-8xl;
+}
+
+h2 {
+  @apply font-heading font-bold text-3xl md:text-4xl lg:text-5xl;
+}
+
+h3 {
+  @apply font-heading font-semibold text-xl;
+}
+
+h4 {
+  @apply font-body font-normal text-lg;
+}
+
+p {
+  @apply font-body font-normal text-base;
+}
+
+h5 {
+}
+
+.p-default {
+  @apply px-4 md:px-8 lg:px-16;
+}
+
+.btn-primary {
+  @apply bg-th-primary border border-th-primary rounded-xl px-12 py-2 text-white uppercase;
+}
+
+.btn-primary:hover {
+  @apply border-th-primary border bg-white text-th-primary;
+}
+
+.btn-secondary {
+  @apply bg-white border border-th-primary rounded-xl px-12 py-2 text-th-primary uppercase;
+}
+
+.btn-secondary:hover {
+  @apply border-th-primary border bg-th-primary text-white;
+}
+
+.btn-transparent {
+  @apply px-4 py-2 text-white rounded-xl;
+}
+
+.btn-transparent:hover {
+  @apply border border-white font-semibold;
+}
+
+.service:hover > a > h3 {
+  @apply text-white;
+}
+
+.userform input {
+  @apply p-3 text-sm mt-6;
+  background: #fcfcfc;
+  border: 1px solid #e7e7e7;
+  box-shadow: 0px 4px 4px rgba(224, 227, 231, 0.2);
+  border-radius: 10px;
+}
+
+.userform input:placeholder {
+  @apply text-[#B0B0B0];
+}
+
+.nav-menu a,
+h2,
+h3 {
+  @apply text-[#4e4e4e];
+}
+
+.nav-menu div {
+  @apply border-2 border-white rounded-xl;
+}
+
+.nav-menu div:hover {
+  @apply border-th-primary;
+}
+
+.nav-menu div:hover > a,
+.nav-menu div:hover > h2 {
+  @apply text-th-primary;
+}
+
+.nav-menu div:hover article div h3 {
+  @apply text-th-primary;
+}
